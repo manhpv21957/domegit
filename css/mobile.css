@@ -4,17 +4,39 @@
   }
   .narbar {
     height: auto;
-    display: block;
+    display: flex;
     padding: 0px;
     margin: auto;
     text-align: left;
-    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    border-right: unset;
+    border-bottom: unset;
   }
   .div-nar {
     display: block;
     padding: 15px;
-    border-left: none;
+    border-left: unset;
     text-align: left;
+  }
+  /* phần narbar thẳng hàg*/
+  .nar {
+    flex-basis: unset;
+    font-size: 14px;
+    display: flex;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-start;
+    border: unset;
+    padding-left: 33px;
+    padding-top: 10px;
+  }
+  /*bỏ phần boder bên infor*/
+  .narbar a {
+    border-right: unset;
+  }
+  .narbar a:first-child {
+    border-left: unset;
   }
   #info {
     display: block;
@@ -22,10 +44,52 @@
   #jod-grid {
     display: block;
   }
-  #chung-giai {
-    display: block;
-  }
+  /* #chung-giai {
+    display: block; */
+
   .project {
     display: block;
   }
+  /* để cho phần foter nằm trên cùng hàng*/
+  section > .container {
+    justify-content: center;
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    padding: 30px 50px;
+  }
+  /*phần chứng chỉ giải thưởng*/
+  #chung-giai {
+    display: block;
+  }
+  .chung-chi2 {
+    border-left: none;
+    padding-left: 0px;
+    border-top: 2px solid #d6c08d;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .chung-chi {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  /* cho phần chứng chỉ col rớt xuống dòng*/
+  .chung-chi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .chung-chi2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .chung-chi3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
+/* phần chứng chỉ giải thưởng
+#chung-giai {
+  display: block;
+} */

@@ -100,11 +100,18 @@ i {
 }
 #info > div {
   padding: 20px 30px;
-}
+  height: 100%;
+} /*
 #info > div:first-child {
   background-color: rgba(175, 176, 177, 0.308);
 }
 #info > div:last-child {
+  background-color: rgba(175, 176, 177, 0.767);
+}*/
+#info-bgr1 {
+  background-color: rgba(175, 176, 177, 0.308);
+}
+#info-bgr2 {
   background-color: rgba(175, 176, 177, 0.767);
 }
 #info p {

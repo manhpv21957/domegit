@@ -1,4 +1,5 @@
 @media (min-width: 768px) and (max-width: 1024px) {
+  /* ẩn avata khi ở màn hình tablet*/
   .nara3 {
     display: none;
   }
@@ -13,8 +14,27 @@
     border-left: none;
     text-align: center;
   }
+  /* chia thành 2 cột và vị trí vẫn vậy*/
   #jod-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* phần 4 :cho 2 phần nó sát vào nhau
+.gap-5 {
+  gap: none;
+} */
+  /* cho phần chứng chỉ col rớt xuống dòng*/
+  .chung-chi {
+    display: flex;
+    flex-direction: column;
+  }
+  .chung-chi2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .chung-chi3 {
+    display: flex;
+    flex-direction: column;
   }
 }
